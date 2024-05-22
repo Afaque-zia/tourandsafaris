@@ -1,0 +1,1898 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Tour and Safaris </title>
+
+	<!-- Meta Tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="author" content="Webestica.com">
+	<meta name="description" content="Tour and Safaris">
+
+	<!-- Dark mode -->
+	<script>
+		const storedTheme = localStorage.getItem('theme')
+
+		const getPreferredTheme = () => {
+			if (storedTheme) {
+				return storedTheme
+			}
+			return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+		}
+
+		const setTheme = function (theme) {
+			if (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+				document.documentElement.setAttribute('data-bs-theme', 'dark')
+			} else {
+				document.documentElement.setAttribute('data-bs-theme', theme)
+			}
+		}
+
+		setTheme(getPreferredTheme())
+
+		window.addEventListener('DOMContentLoaded', () => {
+			var el = document.querySelector('.theme-icon-active');
+			if (el != 'undefined' && el != null) {
+				const showActiveTheme = theme => {
+					const activeThemeIcon = document.querySelector('.theme-icon-active use')
+					const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`)
+					const svgOfActiveBtn = btnToActive.querySelector('.mode-switch use').getAttribute('href')
+
+					document.querySelectorAll('[data-bs-theme-value]').forEach(element => {
+						element.classList.remove('active')
+					})
+
+					btnToActive.classList.add('active')
+					activeThemeIcon.setAttribute('href', svgOfActiveBtn)
+				}
+
+				window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+					if (storedTheme !== 'light' || storedTheme !== 'dark') {
+						setTheme(getPreferredTheme())
+					}
+				})
+
+				showActiveTheme(getPreferredTheme())
+
+				document.querySelectorAll('[data-bs-theme-value]')
+					.forEach(toggle => {
+						toggle.addEventListener('click', () => {
+							const theme = toggle.getAttribute('data-bs-theme-value')
+							localStorage.setItem('theme', theme)
+							setTheme(theme)
+							showActiveTheme(theme)
+						})
+					})
+
+			}
+		})
+
+	</script>
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="assets/images/favicon.ico">
+
+	<!-- Google Font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com/">
+	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&amp;family=Poppins:wght@400;500;700&amp;display=swap">
+
+	<!-- Plugins CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/vendor/font-awesome/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap-icons/bootstrap-icons.css">
+	<link rel="stylesheet" type="text/css" href="assets/vendor/tiny-slider/tiny-slider.css">
+	<link rel="stylesheet" type="text/css" href="assets/vendor/glightbox/css/glightbox.css">
+	<link rel="stylesheet" type="text/css" href="assets/vendor/flatpickr/css/flatpickr.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/vendor/choices/css/choices.min.css">
+
+
+	<!-- Theme CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<style>
+
+	</style>
+
+</head>
+
+<body class="has-navbar-mobile">
+
+	<!-- Header START -->
+	<header class="navbar-light header-sticky"
+		style="box-shadow: 0 -5px 10px 5px rgba(0,0,0,.5);background-color: #4d726d;">
+		<!-- Logo Nav START -->
+		<nav class="navbar navbar-expand-xl">
+			<div class="container">
+				<!-- Logo START -->
+				<a class="navbar-brand" href="index.html">
+					<img class="light-mode-item navbar-brand-item" src="assets/images/logo-light.svg" alt="logo">
+					<img class="dark-mode-item navbar-brand-item" src="assets/images/logo-light.svg" alt="logo">
+				</a>
+				<!-- Logo END -->
+
+				<!-- Responsive navbar toggler -->
+				<button class="navbar-toggler ms-auto ms-sm-0 p-0 p-sm-2" type="button" data-bs-toggle="collapse"
+					data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-animation">
+						<span></span>
+						<span></span>
+						<span></span>
+					</span>
+					<span class="d-none d-sm-inline-block small">Menu</span>
+				</button>
+
+
+				<!-- Main navbar START -->
+				<div class="navbar-collapse collapse" id="navbarCollapse">
+					<ul class="navbar-nav navbar-nav-scroll me-auto">
+
+						<!-- Nav item Listing -->
+						<li class="nav-item  dropdown">
+							<a class="nav-link dropdown-toggle text-light" href="#" id="listingMenu"
+								data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Experiences</a>
+							<ul class="dropdown-menu" aria-labelledby="listingMenu">
+								<li><a class="dropdown-item" href="./taste_of_rajasthan.html">Taste of Rajasthan</a>
+								</li>
+								<li><a class="dropdown-item" href="./rajasthan_the_acclaimed_journey.html">Rajasthan the
+										Acclaimed Journey</a></li>
+								<li><a class="dropdown-item" href="./a_grand_symphony.html">A Grand Symphony</a></li>
+								<li><a class="dropdown-item" href="./the_enchanting_heart_of_India.html">The Enchanting
+										Heart of India</a></li>
+								<li><a class="dropdown-item" href="./the_enchanting_heart_of_India.html">The Enchanting
+										Heart of India</a></li>
+								<li><a class="dropdown-item"
+										href="./Discover_India's_Regal_Charm_and_Tranquil_Allure.html">Discover India's
+										Regal Charm and Tranquil
+										Allure</a></li>
+								<li><a class="dropdown-item" href="./Sacred_Sojourn.html">Sacred Sojourn </a></li>
+								<li><a class="dropdown-item" href="./India's_Safari.html">India's Safari </a></li>
+								<li><a class="dropdown-item" href="./Journey_through_India.html">Journey through
+										India</a></li>
+								<li><a class="dropdown-item" href="./North_East_an_Epic_Journey.html">North East an Epic
+										Journey </a></li>
+								<li><a class="dropdown-item"
+										href="./reignite_passion_explore_wilderness_your_private_adventure.html">Rekindle
+										your zeal, endeavor into the untamed</a></li>
+								<li><a class="dropdown-item"
+										href="./south_india's_artistic_legacy_in_hindu_art_form.html">South India's
+										Artistic Heritage </a></li>
+								<li><a class="dropdown-item"
+										href="./kerala's_wellness_retreat_dutch_history_birding_tea_estates_and_backwater_bliss.html">Kerala's
+										Wellness Retreat </a></li>
+								<li><a class="dropdown-item" href="./wild_encounters_and_backwater_bliss.html">South
+										India's Splendid Journey</a></li>
+								<li><a class="dropdown-item"
+										href="./ancient_edifices_to_azure_edens_south_india's_legacy_unveiled.html">Ancient
+										Edifices to Azure Edens</a></li>
+							</ul>
+						</li>
+
+						<!-- Nav item Pages -->
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle text-light" href="#" id="pagesMenu"
+								data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Holiday Types</a>
+							<ul class="dropdown-menu" aria-labelledby="pagesMenu">
+								<li><a class="dropdown-item" href="./ancient_heritage_&_spirituality.html">Ancient
+										Heritage & Spirituality</a></li>
+								<li><a class="dropdown-item" href="./family_celebration.html">Family Celebration</a>
+								</li>
+								<li><a class="dropdown-item" href="./pristine_nature_&_wellness.html">Pristine Nature &
+										wellness</a></li>
+								<li><a class="dropdown-item" href="./luxury_experiences.html">Luxury Experiences</a>
+								</li>
+								<li><a class="dropdown-item" href="./photo_tour.html">Photo Tour </a></li>
+								<li><a class="dropdown-item" href="./fort_palace_&_taj.html">Fort, Palace & Taj</a></li>
+								<li><a class="dropdown-item" href="./romance_&_wilderness.html">Romance & Wilderness</a>
+								</li>
+								<li><a class="dropdown-item" href="./taj_temples_&_spirituality.html">Taj, Temples &
+										Spirituality</a></li>
+								<li><a class="dropdown-item" href="./temples_&_culture.html">Temples & culture </a></li>
+								<li><a class="dropdown-item" href="./tryst_with_tigers.html">Tryst with Tigers </a></li>
+								<li><a class="dropdown-item" href="./wellness_ayurveda_&_yuga.html">Wellness – Ayurveda
+										& Yuga</a></li>
+							</ul>
+						</li>
+
+						<!-- Nav item Account -->
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle text-light" href="#" id="accounntMenu"
+								data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</a>
+							<ul class="dropdown-menu" aria-labelledby="accounntMenu">
+
+								<li> <a class="dropdown-item" href="about.html">About Us</a> </li>
+								<li> <a class="dropdown-item" href="faq.html">FAQs</a> </li>
+								<li> <a class="dropdown-item" href="contact.html">Contact Us</a> </li>
+							</ul>
+						</li>
+
+					</ul>
+				</div>
+				<!-- Main navbar END -->
+
+				<!-- Profile and Notification START -->
+				<ul class="nav flex-row align-items-center list-unstyled ms-xl-auto">
+
+					<!-- Profile dropdown START -->
+					<li class="nav-item ms-3 dropdown">
+						<!-- Avatar -->
+						<a class="avatar avatar-sm p-0" href="#" id="profileDropdown" role="button"
+							data-bs-auto-close="outside" data-bs-display="static" data-bs-toggle="dropdown"
+							aria-expanded="false">
+							<img class="avatar-img rounded-2" src="assets/images/logo.png" alt="Tour And Safary">
+						</a>
+
+						<ul class="dropdown-menu dropdown-animation dropdown-menu-end shadow pt-3"
+							aria-labelledby="profileDropdown">
+							<li><a class="dropdown-item" href="./faq.html"><i
+										class="bi bi-bookmark-check fa-fw me-2"></i>FAQs</a></li>
+							<li><a class="dropdown-item" href="./help-center.html"><i
+										class="bi bi-house-door fa-fw me-2"></i>Help
+									Center</a>
+							</li>
+							<li><a class="dropdown-item" href="./terms-of-service.html"><i
+										class="bi bi-info-circle fa-fw me-2"></i>Cookie
+									policy</a></li>
+							<li><a class="dropdown-item bg-danger-soft-hover" href="./privacy-policy.html"><i
+										class="bi bi-info-square-fill fa-fw me-2"></i>Privacy policy</a></li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
+
+							<!-- Dark mode options START -->
+							<li>
+								<div
+									class="nav-pills-primary-soft theme-icon-active d-flex justify-content-between align-items-center p-2 pb-0">
+									<span>Mode:</span>
+									<button type="button" class="btn btn-link nav-link text-primary-hover mb-0 p-0"
+										data-bs-theme-value="light" data-bs-toggle="tooltip" data-bs-placement="top"
+										data-bs-title="Light">
+										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+											fill="currentColor" class="bi bi-sun fa-fw mode-switch" viewBox="0 0 16 16">
+											<path
+												d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+											<use href="#"></use>
+										</svg>
+									</button>
+									<button type="button" class="btn btn-link nav-link text-primary-hover mb-0 p-0"
+										data-bs-theme-value="dark" data-bs-toggle="tooltip" data-bs-placement="top"
+										data-bs-title="Dark">
+										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+											fill="currentColor" class="bi bi-moon-stars fa-fw mode-switch"
+											viewBox="0 0 16 16">
+											<path
+												d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278zM4.858 1.311A7.269 7.269 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.316 7.316 0 0 0 5.205-2.162c-.337.042-.68.063-1.029.063-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286z" />
+											<path
+												d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z" />
+											<use href="#"></use>
+										</svg>
+									</button>
+									<button type="button"
+										class="btn btn-link nav-link text-primary-hover mb-0 p-0 active"
+										data-bs-theme-value="auto" data-bs-toggle="tooltip" data-bs-placement="top"
+										data-bs-title="Auto">
+										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+											fill="currentColor" class="bi bi-circle-half fa-fw mode-switch"
+											viewBox="0 0 16 16">
+											<path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />
+											<use href="#"></use>
+										</svg>
+									</button>
+								</div>
+							</li>
+							<!-- Dark mode options END-->
+						</ul>
+					</li>
+					<!-- Profile dropdown END -->
+				</ul>
+				<!-- Profile and Notification START -->
+
+			</div>
+		</nav>
+		<!-- Logo Nav END -->
+	</header>
+	<!-- Header END -->
+
+	<!-- **************** MAIN CONTENT START **************** -->
+	<main>
+
+		<!-- =======================Slider Start -->
+		<!-- =======================Main Banner START -->
+		<section class="py-0 mt-5">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-11 mx-auto">
+						<!-- Slider START -->
+						<div class="tiny-slider arrow-round arrow-blur arrow-hover rounded-3 overflow-hidden">
+							<div class="tiny-slider-inner" data-gutter="0" data-arrow="true" data-dots="false"
+								data-items="1">
+								<!-- Card item START -->
+								<div class="card overflow-hidden h-400px h-sm-600px rounded-0"
+									style="background-image:url(assets/images/category/safari/06.jpg); background-position: center left; background-size: cover;">
+									<!-- Background dark overlay -->
+									<div class="bg-overlay bg-dark opacity-3"></div>
+									<!-- Card image overlay -->
+									<div class="card-img-overlay d-flex align-items-center">
+										<div class="container">
+											<div class="row">
+												<div class="col-11 col-lg-7">
+													<h6 class="text-white fw-normal mb-0">💖 Breakup from the
+														traditional or superstition knowledge trusted for too long
+													</h6>
+													<!-- Title -->
+													<h1 class="text-white display-6">Dreams Beyond Imagination</h1>
+													<a href="#" class="btn btn-primary mb-0">Reserve Today</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- Card item END -->
+
+								<!-- Card item START -->
+								<div class="card overflow-hidden h-400px h-sm-600px bg-parallax text-center rounded-0"
+									style="background-image:url(assets/images/category/safari/07.jpg); background-position: center left; background-size: cover;">
+									<!-- Background dark overlay -->
+									<div class="bg-overlay bg-dark opacity-3"></div>
+									<!-- Card image overlay -->
+									<div class="card-img-overlay d-flex align-items-center p-3 p-sm-4">
+										<div class="container w-100 my-auto">
+											<div class="row justify-content-center">
+												<div class="col-11 col-lg-8">
+													<!-- Title -->
+													<h3 class="text-white h4">We go beyond your imagination with unique
+														experiences</h3>
+													<a href="#" class="btn btn-dark mb-0">Take Me There</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- Card item END -->
+
+								<!-- Card item START -->
+								<div class="card overflow-hidden h-400px h-sm-600px rounded-0"
+									style="background-image:url(assets/images/category/safari/08.jpg); background-position: center left; background-size: cover;">
+									<!-- Background dark overlay -->
+									<div class="bg-overlay bg-dark opacity-3"></div>
+									<!-- Card image overlay -->
+									<div class="card-img-overlay d-flex align-items-center">
+										<div class="container">
+											<div class="row">
+												<div class="col-11 col-lg-12">
+													<h6 class="text-white text-end fw-normal mb-0">💖 Go beyond simply
+														reporting observations to improve the tour design
+													</h6>
+													<!-- Title -->
+													<h1 class="text-white text-end  display-6">Improve The Tour Design
+													</h1>
+													<a href="#" class="btn float-end btn-primary mb-0">Reserve Today</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- Card item END -->
+
+							</div>
+						</div>
+						<!-- Slider END -->
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- =======================Main Banner END -->
+
+		<!-- ============About START -->
+		<section class="pt-md-8">
+			<div class="container">
+				<div class="row g-4">
+					<div class="col-lg-10 m-auto text-center">
+						<h2>What We Offer!</h2>
+						<p class="lead mb-3"><strong>At "Tours & Safaris" INDIA</strong>, we are dedicated to providing
+							you with an
+							authentic and immersive Indian experience. Join us on this incredible journey to explore a
+							land of rich traditions, vibrant cultures, and breathtaking landscapes.</p>
+					</div>
+				</div> <!-- Row END -->
+				<div class="row g-4">
+					<!-- Destination item START -->
+					<div class="col-sm-6 col-lg-3">
+						<!-- Card START -->
+						<div class="card card-img-scale overflow-hidden bg-transparent">
+							
+
+							<!-- Image -->
+							<div class="card-img-scale-wrapper rounded-3">
+								<img src="assets/images/category/flight/01.jpg" class="card-img" alt="hotel image">
+								<!-- Card overlay -->
+								<div class="card-img-overlay d-flex align-items-start flex-column p-3">
+									
+									<!-- Social button -->
+									<div class="btn-group hover-element d-flex mt-auto">
+										<a href="#" class="btn btn-white">Italy</a>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<!-- Card END -->
+					</div>
+					<!-- Destination item END -->
+
+					<!-- Destination item START -->
+					<div class="col-sm-6 col-lg-3">
+						<!-- Card START -->
+						<div class="card card-img-scale overflow-hidden bg-transparent">
+							<!-- Image -->
+							<div class="card-img-scale-wrapper rounded-3">
+								<img src="assets/images/category/flight/03.jpg" class="card-img" alt="">
+								<!-- Card overlay -->
+								<div class="card-img-overlay d-flex align-items-start flex-column p-3">
+									
+									<!-- Social button -->
+									<div class="btn-group hover-element d-flex mt-auto">
+										<a href="#" class="btn btn-white">Italy</a>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<!-- Card END -->
+					</div>
+					<!-- Destination item END -->
+
+					<!-- Destination item START -->
+					<div class="col-sm-6 col-lg-3">
+						<!-- Card START -->
+						<div class="card card-img-scale overflow-hidden bg-transparent">
+							
+							<!-- Image -->
+							<div class="card-img-scale-wrapper rounded-3">
+								<img src="assets/images/category/flight/02.jpg" class="card-img" alt="hotel image">
+								<!-- Card overlay -->
+								<div class="card-img-overlay d-flex align-items-start flex-column p-3">
+									
+									<!-- Social button -->
+									<div class="btn-group hover-element d-flex mt-auto">
+										<a href="#" class="btn btn-white">Italy</a>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<!-- Card END -->
+					</div>
+					<!-- Destination item END -->
+
+					<!-- Destination item START -->
+					<div class="col-sm-6 col-lg-3">
+						<!-- Card START -->
+						<div class="card card-img-scale overflow-hidden bg-transparent">
+							<!-- Image -->
+							<div class="card-img-scale-wrapper rounded-3">
+								<img src="assets/images/category/flight/04.jpg" class="card-img" alt="">
+								<!-- Card overlay -->
+								<div class="card-img-overlay d-flex align-items-start flex-column p-3">
+									
+									<!-- Social button -->
+									<div class="btn-group hover-element d-flex mt-auto">
+										<a href="#" class="btn btn-white">Italy</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Card END -->
+					</div>
+					<!-- Destination item END -->
+
+					<!-- Team item START -->
+					<div class="col-sm-6 col-md-4 col-xl-3">
+						<div class="card card-img-scale card-element-hover overflow-hidden bg-transparent">
+							<div class="card-img-scale-wrapper rounded-3">
+								<!-- Image -->
+								<img src="assets/images/team/01.jpg" class="card-img" alt="">
+								<!-- Card overlay -->
+								<div class="card-img-overlay d-flex align-items-start flex-column p-3">
+									
+									<!-- Social button -->
+									<div class="btn-group hover-element d-flex mt-auto">
+										<a href="#" class="btn btn-white">Italy</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Team item END -->
+
+					<!-- Team item START -->
+					<div class="col-sm-6 col-md-4 col-xl-3">
+						<div class="card card-img-scale card-element-hover overflow-hidden bg-transparent">
+							<div class="card-img-scale-wrapper rounded-3">
+								<!-- Image -->
+								<img src="assets/images/team/02.jpg" class="card-img" alt="">
+								<!-- Card overlay -->
+								<div class="card-img-overlay d-flex align-items-start flex-column p-3">
+									
+									<!-- Social button -->
+									<div class="btn-group hover-element d-flex mt-auto">
+										<a href="#" class="btn btn-white">Italy</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Team item END -->
+
+					<!-- Team item START -->
+					<div class="col-sm-6 col-md-4 col-xl-3">
+						<div class="card card-img-scale card-element-hover overflow-hidden bg-transparent">
+							<div class="card-img-scale-wrapper rounded-3">
+								<!-- Image -->
+								<img src="assets/images/team/03.jpg" class="card-img" alt="">
+								<!-- Card overlay -->
+								<div class="card-img-overlay d-flex align-items-start flex-column p-3">
+									
+									<!-- Social button -->
+									<div class="btn-group hover-element d-flex mt-auto">
+										<a href="#" class="btn btn-white">Italy</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Team item END -->
+
+					<!-- Team item START -->
+					<div class="col-sm-6 col-md-4 col-xl-3">
+						<div class="card card-img-scale card-element-hover overflow-hidden bg-transparent">
+							<div class="card-img-scale-wrapper rounded-3">
+								<!-- Image -->
+								<img src="assets/images/team/04.jpg" class="card-img" alt="">
+								<!-- Card overlay -->
+								<div class="card-img-overlay d-flex align-items-start flex-column p-3">
+									
+									<!-- Social button -->
+									<div class="btn-group hover-element d-flex mt-auto">
+										<a href="#" class="btn btn-white">Italy</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Team item END -->
+				</div>
+				<!-- Team END -->
+				<div class="row g-4 mt-5">
+					<div class="col-12">
+						<button class="btn btn-primary">View All Destinations</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- ============About END=========== -->
+
+		<!-- =======================Slider End -->
+
+		<!-- =======================About START -->
+		<section class="pb-0 pb-xl-5">
+			<div class="container">
+				<div class="row g-4 justify-content-between align-items-center">
+					<!-- Left side START -->
+					<div class="col-lg-5 position-relative">
+						<!-- Svg Decoration -->
+						<figure class="position-absolute top-0 start-0 translate-middle z-index-1 ms-4">
+							<svg class="fill-warning" width="77px" height="77px">
+								<path
+									d="M76.997,41.258 L45.173,41.258 L67.676,63.760 L63.763,67.673 L41.261,45.171 L41.261,76.994 L35.728,76.994 L35.728,45.171 L13.226,67.673 L9.313,63.760 L31.816,41.258 L-0.007,41.258 L-0.007,35.725 L31.816,35.725 L9.313,13.223 L13.226,9.311 L35.728,31.813 L35.728,-0.010 L41.261,-0.010 L41.261,31.813 L63.763,9.311 L67.676,13.223 L45.174,35.725 L76.997,35.725 L76.997,41.258 Z" />
+							</svg>
+						</figure>
+
+						<!-- Svg decoration -->
+						<figure class="position-absolute bottom-0 end-0 d-none d-md-block mb-n5 me-n4">
+							<svg height="400" class="fill-primary opacity-2" viewBox="0 0 340 340">
+								<circle cx="194.2" cy="2.2" r="2.2"></circle>
+								<circle cx="2.2" cy="2.2" r="2.2"></circle>
+								<circle cx="218.2" cy="2.2" r="2.2"></circle>
+								<circle cx="26.2" cy="2.2" r="2.2"></circle>
+								<circle cx="242.2" cy="2.2" r="2.2"></circle>
+								<circle cx="50.2" cy="2.2" r="2.2"></circle>
+								<circle cx="266.2" cy="2.2" r="2.2"></circle>
+								<circle cx="74.2" cy="2.2" r="2.2"></circle>
+								<circle cx="290.2" cy="2.2" r="2.2"></circle>
+								<circle cx="98.2" cy="2.2" r="2.2"></circle>
+								<circle cx="314.2" cy="2.2" r="2.2"></circle>
+								<circle cx="122.2" cy="2.2" r="2.2"></circle>
+								<circle cx="338.2" cy="2.2" r="2.2"></circle>
+								<circle cx="146.2" cy="2.2" r="2.2"></circle>
+								<circle cx="170.2" cy="2.2" r="2.2"></circle>
+								<circle cx="194.2" cy="26.2" r="2.2"></circle>
+								<circle cx="2.2" cy="26.2" r="2.2"></circle>
+								<circle cx="218.2" cy="26.2" r="2.2"></circle>
+								<circle cx="26.2" cy="26.2" r="2.2"></circle>
+								<circle cx="242.2" cy="26.2" r="2.2"></circle>
+								<circle cx="50.2" cy="26.2" r="2.2"></circle>
+								<circle cx="266.2" cy="26.2" r="2.2"></circle>
+								<circle cx="74.2" cy="26.2" r="2.2"></circle>
+								<circle cx="290.2" cy="26.2" r="2.2"></circle>
+								<circle cx="98.2" cy="26.2" r="2.2"></circle>
+								<circle cx="314.2" cy="26.2" r="2.2"></circle>
+								<circle cx="122.2" cy="26.2" r="2.2"></circle>
+								<circle cx="338.2" cy="26.2" r="2.2"></circle>
+								<circle cx="146.2" cy="26.2" r="2.2"></circle>
+								<circle cx="170.2" cy="26.2" r="2.2"></circle>
+								<circle cx="194.2" cy="50.2" r="2.2"></circle>
+								<circle cx="2.2" cy="50.2" r="2.2"></circle>
+								<circle cx="218.2" cy="50.2" r="2.2"></circle>
+								<circle cx="26.2" cy="50.2" r="2.2"></circle>
+								<circle cx="242.2" cy="50.2" r="2.2"></circle>
+								<circle cx="50.2" cy="50.2" r="2.2"></circle>
+								<circle cx="266.2" cy="50.2" r="2.2"></circle>
+								<circle cx="74.2" cy="50.2" r="2.2"></circle>
+								<circle cx="290.2" cy="50.2" r="2.2"></circle>
+								<circle cx="98.2" cy="50.2" r="2.2"></circle>
+								<circle cx="314.2" cy="50.2" r="2.2"></circle>
+								<circle cx="122.2" cy="50.2" r="2.2"></circle>
+								<circle cx="338.2" cy="50.2" r="2.2"></circle>
+								<circle cx="146.2" cy="50.2" r="2.2"></circle>
+								<circle cx="170.2" cy="50.2" r="2.2"></circle>
+								<circle cx="194.2" cy="74.2" r="2.2"></circle>
+								<circle cx="2.2" cy="74.2" r="2.2"></circle>
+								<circle cx="218.2" cy="74.2" r="2.2"></circle>
+								<circle cx="26.2" cy="74.2" r="2.2"></circle>
+								<circle cx="242.2" cy="74.2" r="2.2"></circle>
+								<circle cx="50.2" cy="74.2" r="2.2"></circle>
+								<circle cx="266.2" cy="74.2" r="2.2"></circle>
+								<circle cx="74.2" cy="74.2" r="2.2"></circle>
+								<circle cx="290.2" cy="74.2" r="2.2"></circle>
+								<circle cx="98.2" cy="74.2" r="2.2"></circle>
+								<circle cx="314.2" cy="74.2" r="2.2"></circle>
+								<circle cx="122.2" cy="74.2" r="2.2"></circle>
+								<circle cx="338.2" cy="74.2" r="2.2"></circle>
+								<circle cx="146.2" cy="74.2" r="2.2"></circle>
+								<circle cx="170.2" cy="74.2" r="2.2"></circle>
+								<circle cx="194.2" cy="98.2" r="2.2"></circle>
+								<circle cx="2.2" cy="98.2" r="2.2"></circle>
+								<circle cx="218.2" cy="98.2" r="2.2"></circle>
+								<circle cx="26.2" cy="98.2" r="2.2"></circle>
+								<circle cx="242.2" cy="98.2" r="2.2"></circle>
+								<circle cx="50.2" cy="98.2" r="2.2"></circle>
+								<circle cx="266.2" cy="98.2" r="2.2"></circle>
+								<circle cx="74.2" cy="98.2" r="2.2"></circle>
+								<circle cx="290.2" cy="98.2" r="2.2"></circle>
+								<circle cx="98.2" cy="98.2" r="2.2"></circle>
+								<circle cx="314.2" cy="98.2" r="2.2"></circle>
+								<circle cx="122.2" cy="98.2" r="2.2"></circle>
+								<circle cx="338.2" cy="98.2" r="2.2"></circle>
+								<circle cx="146.2" cy="98.2" r="2.2"></circle>
+								<circle cx="170.2" cy="98.2" r="2.2"></circle>
+								<circle cx="194.2" cy="122.2" r="2.2"></circle>
+								<circle cx="2.2" cy="122.2" r="2.2"></circle>
+								<circle cx="218.2" cy="122.2" r="2.2"></circle>
+								<circle cx="26.2" cy="122.2" r="2.2"></circle>
+								<circle cx="242.2" cy="122.2" r="2.2"></circle>
+								<circle cx="50.2" cy="122.2" r="2.2"></circle>
+								<circle cx="266.2" cy="122.2" r="2.2"></circle>
+								<circle cx="74.2" cy="122.2" r="2.2"></circle>
+								<circle cx="290.2" cy="122.2" r="2.2"></circle>
+								<circle cx="98.2" cy="122.2" r="2.2"></circle>
+								<circle cx="314.2" cy="122.2" r="2.2"></circle>
+								<circle cx="122.2" cy="122.2" r="2.2"></circle>
+								<circle cx="338.2" cy="122.2" r="2.2"></circle>
+								<circle cx="146.2" cy="122.2" r="2.2"></circle>
+								<circle cx="170.2" cy="122.2" r="2.2"></circle>
+								<circle cx="194.2" cy="146.2" r="2.2"></circle>
+								<circle cx="2.2" cy="146.2" r="2.2"></circle>
+								<circle cx="218.2" cy="146.2" r="2.2"></circle>
+								<circle cx="26.2" cy="146.2" r="2.2"></circle>
+								<circle cx="242.2" cy="146.2" r="2.2"></circle>
+								<circle cx="50.2" cy="146.2" r="2.2"></circle>
+								<circle cx="266.2" cy="146.2" r="2.2"></circle>
+								<circle cx="74.2" cy="146.2" r="2.2"></circle>
+								<circle cx="290.2" cy="146.2" r="2.2"></circle>
+								<circle cx="98.2" cy="146.2" r="2.2"></circle>
+								<circle cx="314.2" cy="146.2" r="2.2"></circle>
+								<circle cx="122.2" cy="146.2" r="2.2"></circle>
+								<circle cx="338.2" cy="146.2" r="2.2"></circle>
+								<circle cx="146.2" cy="146.2" r="2.2"></circle>
+								<circle cx="170.2" cy="146.2" r="2.2"></circle>
+								<circle cx="194.2" cy="170.2" r="2.2"></circle>
+								<circle cx="2.2" cy="170.2" r="2.2"></circle>
+								<circle cx="218.2" cy="170.2" r="2.2"></circle>
+								<circle cx="26.2" cy="170.2" r="2.2"></circle>
+								<circle cx="242.2" cy="170.2" r="2.2"></circle>
+								<circle cx="50.2" cy="170.2" r="2.2"></circle>
+								<circle cx="266.2" cy="170.2" r="2.2"></circle>
+								<circle cx="74.2" cy="170.2" r="2.2"></circle>
+								<circle cx="290.2" cy="170.2" r="2.2"></circle>
+								<circle cx="98.2" cy="170.2" r="2.2"></circle>
+								<circle cx="314.2" cy="170.2" r="2.2"></circle>
+								<circle cx="122.2" cy="170.2" r="2.2"></circle>
+								<circle cx="338.2" cy="170.2" r="2.2"></circle>
+								<circle cx="146.2" cy="170.2" r="2.2"></circle>
+								<circle cx="170.2" cy="170.2" r="2.2"></circle>
+								<circle cx="194.2" cy="194.2" r="2.2"></circle>
+								<circle cx="2.2" cy="194.2" r="2.2"></circle>
+								<circle cx="218.2" cy="194.2" r="2.2"></circle>
+								<circle cx="26.2" cy="194.2" r="2.2"></circle>
+								<circle cx="242.2" cy="194.2" r="2.2"></circle>
+								<circle cx="50.2" cy="194.2" r="2.2"></circle>
+								<circle cx="266.2" cy="194.2" r="2.2"></circle>
+								<circle cx="74.2" cy="194.2" r="2.2"></circle>
+								<circle cx="290.2" cy="194.2" r="2.2"></circle>
+								<circle cx="98.2" cy="194.2" r="2.2"></circle>
+								<circle cx="314.2" cy="194.2" r="2.2"></circle>
+								<circle cx="122.2" cy="194.2" r="2.2"></circle>
+								<circle cx="338.2" cy="194.2" r="2.2"></circle>
+								<circle cx="146.2" cy="194.2" r="2.2"></circle>
+								<circle cx="170.2" cy="194.2" r="2.2"></circle>
+								<circle cx="194.2" cy="218.2" r="2.2"></circle>
+								<circle cx="2.2" cy="218.2" r="2.2"></circle>
+								<circle cx="218.2" cy="218.2" r="2.2"></circle>
+								<circle cx="26.2" cy="218.2" r="2.2"></circle>
+								<circle cx="242.2" cy="218.2" r="2.2"></circle>
+								<circle cx="50.2" cy="218.2" r="2.2"></circle>
+								<circle cx="266.2" cy="218.2" r="2.2"></circle>
+								<circle cx="74.2" cy="218.2" r="2.2"></circle>
+								<circle cx="290.2" cy="218.2" r="2.2"></circle>
+								<circle cx="98.2" cy="218.2" r="2.2"></circle>
+								<circle cx="314.2" cy="218.2" r="2.2"></circle>
+								<circle cx="122.2" cy="218.2" r="2.2"></circle>
+								<circle cx="338.2" cy="218.2" r="2.2"></circle>
+								<circle cx="146.2" cy="218.2" r="2.2"></circle>
+								<circle cx="170.2" cy="218.2" r="2.2"></circle>
+								<circle cx="194.2" cy="242.2" r="2.2"></circle>
+								<circle cx="2.2" cy="242.2" r="2.2"></circle>
+								<circle cx="218.2" cy="242.2" r="2.2"></circle>
+								<circle cx="26.2" cy="242.2" r="2.2"></circle>
+								<circle cx="242.2" cy="242.2" r="2.2"></circle>
+								<circle cx="50.2" cy="242.2" r="2.2"></circle>
+								<circle cx="266.2" cy="242.2" r="2.2"></circle>
+								<circle cx="74.2" cy="242.2" r="2.2"></circle>
+								<circle cx="290.2" cy="242.2" r="2.2"></circle>
+								<circle cx="98.2" cy="242.2" r="2.2"></circle>
+								<circle cx="314.2" cy="242.2" r="2.2"></circle>
+								<circle cx="122.2" cy="242.2" r="2.2"></circle>
+								<circle cx="338.2" cy="242.2" r="2.2"></circle>
+								<circle cx="146.2" cy="242.2" r="2.2"></circle>
+								<circle cx="170.2" cy="242.2" r="2.2"></circle>
+								<circle cx="194.2" cy="266.2" r="2.2"></circle>
+								<circle cx="2.2" cy="266.2" r="2.2"></circle>
+								<circle cx="218.2" cy="266.2" r="2.2"></circle>
+								<circle cx="26.2" cy="266.2" r="2.2"></circle>
+								<circle cx="242.2" cy="266.2" r="2.2"></circle>
+								<circle cx="50.2" cy="266.2" r="2.2"></circle>
+								<circle cx="266.2" cy="266.2" r="2.2"></circle>
+								<circle cx="74.2" cy="266.2" r="2.2"></circle>
+								<circle cx="290.2" cy="266.2" r="2.2"></circle>
+								<circle cx="98.2" cy="266.2" r="2.2"></circle>
+								<circle cx="314.2" cy="266.2" r="2.2"></circle>
+								<circle cx="122.2" cy="266.2" r="2.2"></circle>
+								<circle cx="338.2" cy="266.2" r="2.2"></circle>
+								<circle cx="146.2" cy="266.2" r="2.2"></circle>
+								<circle cx="170.2" cy="266.2" r="2.2"></circle>
+								<circle cx="194.2" cy="290.2" r="2.2"></circle>
+								<circle cx="2.2" cy="290.2" r="2.2"></circle>
+								<circle cx="218.2" cy="290.2" r="2.2"></circle>
+								<circle cx="26.2" cy="290.2" r="2.2"></circle>
+								<circle cx="242.2" cy="290.2" r="2.2"></circle>
+								<circle cx="50.2" cy="290.2" r="2.2"></circle>
+								<circle cx="266.2" cy="290.2" r="2.2"></circle>
+								<circle cx="74.2" cy="290.2" r="2.2"></circle>
+								<circle cx="290.2" cy="290.2" r="2.2"></circle>
+								<circle cx="98.2" cy="290.2" r="2.2"></circle>
+								<circle cx="314.2" cy="290.2" r="2.2"></circle>
+								<circle cx="122.2" cy="290.2" r="2.2"></circle>
+								<circle cx="338.2" cy="290.2" r="2.2"></circle>
+								<circle cx="146.2" cy="290.2" r="2.2"></circle>
+								<circle cx="170.2" cy="290.2" r="2.2"></circle>
+								<circle cx="194.2" cy="314.2" r="2.2"></circle>
+								<circle cx="2.2" cy="314.2" r="2.2"></circle>
+								<circle cx="218.2" cy="314.2" r="2.2"></circle>
+								<circle cx="26.2" cy="314.2" r="2.2"></circle>
+								<circle cx="242.2" cy="314.2" r="2.2"></circle>
+								<circle cx="50.2" cy="314.2" r="2.2"></circle>
+								<circle cx="266.2" cy="314.2" r="2.2"></circle>
+								<circle cx="74.2" cy="314.2" r="2.2"></circle>
+								<circle cx="290.2" cy="314.2" r="2.2"></circle>
+								<circle cx="98.2" cy="314.2" r="2.2"></circle>
+								<circle cx="314.2" cy="314.2" r="2.2"></circle>
+								<circle cx="122.2" cy="314.2" r="2.2"></circle>
+								<circle cx="338.2" cy="314.2" r="2.2"></circle>
+								<circle cx="146.2" cy="314.2" r="2.2"></circle>
+								<circle cx="170.2" cy="314.2" r="2.2"></circle>
+								<circle cx="194.2" cy="338.2" r="2.2"></circle>
+								<circle cx="2.2" cy="338.2" r="2.2"></circle>
+								<circle cx="218.2" cy="338.2" r="2.2"></circle>
+								<circle cx="26.2" cy="338.2" r="2.2"></circle>
+								<circle cx="242.2" cy="338.2" r="2.2"></circle>
+								<circle cx="50.2" cy="338.2" r="2.2"></circle>
+								<circle cx="266.2" cy="338.2" r="2.2"></circle>
+								<circle cx="74.2" cy="338.2" r="2.2"></circle>
+								<circle cx="290.2" cy="338.2" r="2.2"></circle>
+								<circle cx="98.2" cy="338.2" r="2.2"></circle>
+								<circle cx="314.2" cy="338.2" r="2.2"></circle>
+								<circle cx="122.2" cy="338.2" r="2.2"></circle>
+								<circle cx="338.2" cy="338.2" r="2.2"></circle>
+								<circle cx="146.2" cy="338.2" r="2.2"></circle>
+								<circle cx="170.2" cy="338.2" r="2.2"></circle>
+							</svg>
+						</figure>
+
+						<!-- Image -->
+						<img src="assets/images/about/01.jpg" class="rounded-3 position-relative" alt="">
+
+
+					</div>
+					<!-- Left side END -->
+
+					<!-- Right side START -->
+					<div class="col-lg-6">
+						<h2 class="mb-3 mb-lg-5">What Sets Us Apart, Why Us?</h2>
+						<p class="mb-3 mb-lg-5"> Our growth is fueled by word-of-mouth recommendations, underlining the
+							trust and excellence that define our services.</p>
+
+						<!-- Features START -->
+						<div class="row g-4">
+							<!-- Item -->
+							<div class="col-sm-6 about-subInfo" id="success">
+								<div
+									class="subInfoDetails d-none bg-blur border border-light rounded-3 text-center shadow-lg p-3">
+									<b>Tailored Perfection: </b>" Our aspiration is to harmonize with your desires,
+									crafting
+									experiences that align seamlessly with your specific interests. We eagerly
+									anticipate
+									engaging in detailed conversations with you to tailor the services precisely to your
+									requirements. This isn't just travel planning; it's a bespoke, private-guided
+									odyssey,
+									meticulously designed to manifest your distinctive vision."
+								</div>
+								<div class="icon-lg bg-success bg-opacity-10 text-success rounded-circle"><i
+										class="fa-solid fa-utensils"></i></div>
+								<h5 class="mt-2">Tailored Perfection</h5>
+								<p class="mb-0">Crafting experiences that align seamlessly with your specific interests.
+									<span class="text-primary">More...</span>
+								</p>
+							</div>
+
+							<!-- Item -->
+							<div class="col-sm-6 about-subInfo" id="danger">
+								<div
+									class="subInfoDetails d-none bg-blur border border-light rounded-3 text-center shadow-lg p-3">
+									<b>Unrivaled Expertise:</b> "Planning your own holiday is fascinating yet
+									potentially
+									stressful. Our extensive travels throughout India, serving diverse clients, allow us
+									to fulfill your desires. We provide total personalized attention, optimizing your
+									time and budget. Your dedicated specialist guarantees a uniquely tailored journey,
+									ensuring an enriching experience."
+								</div>
+								<div class="icon-lg bg-danger bg-opacity-10 text-danger rounded-circle"><i
+										class="bi bi-stopwatch-fill"></i></div>
+								<h5 class="mt-2">Unrivaled Expertise</h5>
+								<p class="mb-0">Streamlined India travel planning for diverse clients, ensuring your
+									holiday desires are met hassle-free. <span class="text-primary">More...</span></p>
+							</div>
+							<!-- Item -->
+							<div class="col-sm-6 about-subInfo" id="orange">
+								<div
+									class="subInfoDetails d-none bg-blur border border-light rounded-3 text-center shadow-lg p-3">
+									<b>Guides & Drivers that Elevate:</b> “We carefully curate our guides and drivers
+									for your
+									journey. Guides are more than tour leaders; they share stories, history, and
+									culture. Our drivers prioritize safety and comfort, ensuring a tranquil and
+									stress-free travel experience.”
+								</div>
+								<div class="icon-lg bg-orange bg-opacity-10 text-orange rounded-circle"><i
+										class="bi bi-map"></i></div>
+								<h5 class="mt-2">Guides & Drivers that Elevate</h5>
+								<p class="mb-0">Curated guides share culture; drivers ensure safe, tranquil, stress-free
+									journeys. Elevate your travel experience. <span class="text-primary">More...</span>
+								</p>
+							</div>
+							<!-- Item -->
+							<div class="col-sm-6 about-subInfo" id="infogreen">
+								<div
+									class="subInfoDetails d-none bg-blur border border-light rounded-3 text-center shadow-lg p-3">
+									<b>Success in Shared words: </b>“Our business excels through word-of-mouth
+									recommendations
+									thanks to our distinctive products and services that resonate with discerning
+									travelers seeking exceptional experience.”
+								</div>
+								<div class="icon-lg bg-info bg-opacity-10 text-info rounded-circle">
+									<i class="bi bi-chat-fill"></i>
+								</div>
+								<h5 class="mt-2">Success in Shared words</h5>
+								<p class="mb-0">Exceptional experiences for discerning travelers, driving word-of-mouth
+									recommendations and business success. <span class="text-primary">More...</span></p>
+							</div>
+						</div>
+						<!-- Features END -->
+
+					</div>
+					<!-- Right side END -->
+				</div>
+			</div>
+		</section>
+		<!-- =======================About END -->
+
+		<!-- =======================Best deal START -->
+		<section class="pb-2 pb-lg-5">
+			<div class="container">
+				<!-- Slider START -->
+				<div class="tiny-slider arrow-round arrow-blur arrow-hover">
+					<div class="tiny-slider-inner" data-autoplay="true" data-arrow="true" data-edge="2"
+						data-dots="false" data-items-xl="3" data-items-lg="2" data-items-md="1">
+						<!-- Slider item -->
+						<div>
+							<div class="card border rounded-3 overflow-hidden">
+								<div class="row g-0 align-items-center">
+									<!-- Image -->
+									<div class="col-sm-6">
+										<img src="assets/images/offer/01.jpg" class="card-img rounded-0" alt="">
+									</div>
+
+									<!-- Title and content -->
+									<div class="col-sm-6">
+										<div class="card-body px-3">
+											<h6 class="card-title"><a href="offer-detail.html"
+													class="stretched-link">Daily 50 Lucky Winners get a Free Stay</a>
+											</h6>
+											<p class="mb-0">Valid till: 15 Nov</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Slider item -->
+						<div>
+							<div class="card border rounded-3 overflow-hidden">
+								<div class="row g-0 align-items-center">
+									<!-- Image -->
+									<div class="col-sm-6">
+										<img src="assets/images/offer/04.jpg" class="card-img rounded-0" alt="">
+									</div>
+
+									<!-- Title and content -->
+									<div class="col-sm-6">
+										<div class="card-body px-3">
+											<h6 class="card-title"><a href="offer-detail.html" class="stretched-link">Up
+													to 60% OFF</a></h6>
+											<p class="mb-0">On Hotel Bookings Online</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Slider item -->
+						<div>
+							<div class="card border rounded-3 overflow-hidden">
+								<div class="row g-0 align-items-center">
+									<!-- Image -->
+									<div class="col-sm-6">
+										<img src="assets/images/offer/03.jpg" class="card-img rounded-0" alt="">
+									</div>
+
+									<!-- Title and content -->
+									<div class="col-sm-6">
+										<div class="card-body px-3">
+											<h6 class="card-title"><a href="offer-detail.html"
+													class="stretched-link">Book & Enjoy</a></h6>
+											<p class="mb-0">20% Off on the best available room rate</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Slider item -->
+						<div>
+							<div class="card border rounded-3 overflow-hidden">
+								<div class="row g-0 align-items-center">
+									<!-- Image -->
+									<div class="col-sm-6">
+										<img src="assets/images/offer/02.jpg" class="card-img rounded-0" alt="">
+									</div>
+
+									<!-- Title and content -->
+									<div class="col-sm-6">
+										<div class="card-body px-3">
+											<h6 class="card-title"><a href="offer-detail.html"
+													class="stretched-link">Hot Summer Nights</a></h6>
+											<p class="mb-0">Up to 3 nights free!</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Slider END -->
+			</div>
+		</section>
+		<!-- =======================Best deal END -->
+
+		<!-- ===========Stories START============-->
+		<section class="pt-0 pt-md-5">
+			<div class="container">
+
+				<div class="row g-4 g-lg-5 align-items-center">
+
+					<div class="col-lg-4">
+						<!-- Title -->
+						<h3 class="mb-0">Guiding You Towards Right Decisions🔥</h3>
+
+						<div class="d-sm-flex justify-content-sm-between align-items-center mt-4">
+							<!-- Avatar group -->
+							<ul class="avatar-group mb-sm-0">
+								<li class="avatar">
+									<img class="avatar-img rounded-circle" src="assets/images/avatar/01.jpg"
+										alt="avatar">
+								</li>
+								<li class="avatar">
+									<img class="avatar-img rounded-circle" src="assets/images/avatar/02.jpg"
+										alt="avatar">
+								</li>
+								<li class="avatar">
+									<img class="avatar-img rounded-circle" src="assets/images/avatar/03.jpg"
+										alt="avatar">
+								</li>
+								<li class="avatar">
+									<img class="avatar-img rounded-circle" src="assets/images/avatar/04.jpg"
+										alt="avatar">
+								</li>
+								<li class="avatar">
+									<div class="avatar-img rounded-circle bg-dark">
+										<span
+											class="text-white position-absolute top-50 start-50 translate-middle small">16+</span>
+									</div>
+								</li>
+							</ul>
+
+							<!-- Rating -->
+							<h5 class="m-0"><i class="fa-solid fa-star text-warning me-2"></i>4.5</h5>
+						</div>
+
+						<!-- Button -->
+						<a href="#" class="btn btn-lg btn-primary-soft mb-0 mt-4">Explore places <i
+								class="bi fa-fw bi-arrow-right ms-2"></i></a>
+					</div>
+
+					<div class="col-lg-8">
+						<div class="row">
+							<div class="col-md-6">
+								<!-- Card item -->
+								<div class="card card-element-hover card-overlay-hover overflow-hidden">
+									<!-- Image -->
+									<img src="assets/images/category/tour/06.jpg" class="rounded-3" alt="">
+									<!-- Full screen button -->
+									<a class="hover-element position-absolute w-100 h-100" data-glightbox
+										data-gallery="gallery" href="assets/images/gallery/01.jpg">
+										<i
+											class="bi bi-fullscreen fs-6 text-white position-absolute top-50 start-50 translate-middle bg-dark rounded-1 p-2 lh-1"></i>
+									</a>
+								</div>
+
+								<!-- Testimonials START -->
+								<div class="tiny-slider arrow-round arrow-blur arrow-hover arrow-xs my-4 mb-md-0">
+									<div class="tiny-slider-inner pb-1" data-autoplay="true" data-arrow="true"
+										data-dots="false" data-items="1">
+										<!-- Testimonial item -->
+										<div class="card bg-transparent">
+											<div class="row align-items-center">
+												<!-- Image -->
+												<div class="col-4">
+													<img src="assets/images/team/01.jpg" class="card-img" alt="">
+												</div>
+												<!-- Card body -->
+												<div class="col-8">
+													<div class="card-body p-0">
+														<p class="mb-0">Farther-related bed and passage comfort civilly.
+														</p>
+														<h6 class="card-title mb-0 mt-2">Louis Ferguson</h6>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<!-- Testimonial item -->
+										<div class="card bg-transparent">
+											<div class="row align-items-center">
+												<!-- Image -->
+												<div class="col-4">
+													<img src="assets/images/team/02.jpg" class="card-img" alt="">
+												</div>
+												<!-- Card body -->
+												<div class="col-8">
+													<div class="card-body p-0">
+														<p class="mb-0">Farther-related bed and passage comfort civilly.
+														</p>
+														<h6 class="card-title mb-0 mt-2">Lori Stevens</h6>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- Testimonials END -->
+							</div>
+
+							<div class="col-md-6">
+								<!-- Card item -->
+								<div class="card card-element-hover card-overlay-hover overflow-hidden mb-4">
+									<!-- Image -->
+									<img src="assets/images/gallery/02.jpg" class="rounded-3" alt="">
+									<!-- Full screen button -->
+									<a class="hover-element position-absolute w-100 h-100" data-glightbox
+										data-gallery="gallery" href="assets/images/gallery/01.jpg">
+										<i
+											class="bi bi-fullscreen fs-6 text-white position-absolute top-50 start-50 translate-middle bg-dark rounded-1 p-2 lh-1"></i>
+									</a>
+								</div>
+								<!-- Card item -->
+								<div class="card card-element-hover card-overlay-hover overflow-hidden">
+									<!-- Image -->
+									<img src="assets/images/gallery/03.jpg" class="rounded-3" alt="">
+									<!-- Full screen button -->
+									<a class="hover-element position-absolute w-100 h-100" data-glightbox
+										data-gallery="gallery" href="assets/images/gallery/03.jpg">
+										<i
+											class="bi bi-fullscreen fs-6 text-white position-absolute top-50 start-50 translate-middle bg-dark rounded-1 p-2 lh-1"></i>
+									</a>
+								</div>
+							</div>
+						</div><!-- Row END -->
+					</div>
+				</div> <!-- Row END -->
+			</div>
+		</section>
+		<!-- ============Stories END===========-->
+
+		<!-- =============Tabs START========== -->
+		<section class="py-0">
+			<div class="container">
+
+				<!-- Tabs START -->
+				<div class="row">
+					<div class="col-12">
+						<!-- Outer tabs START -->
+						<ul class="nav nav-pills nav-justified nav-responsive bg-primary bg-opacity-10 rounded p-2"
+							id="tour-pills-tab" role="tablist">
+							<!-- Tab item -->
+							<li class="nav-item" role="presentation">
+								<button class="nav-link active mb-0" id="tour-pills-tab-1" data-bs-toggle="pill"
+									data-bs-target="#tour-pills-tab1" type="button" role="tab"
+									aria-controls="tour-pills-tab1" aria-selected="true">Excellence</button>
+							</li>
+							<!-- Tab item -->
+							<li class="nav-item" role="presentation">
+								<button class="nav-link mb-0" id="tour-pills-tab-2" data-bs-toggle="pill"
+									data-bs-target="#tour-pills-tab2" type="button" role="tab"
+									aria-controls="tour-pills-tab2" aria-selected="false">Experienced Hands</button>
+							</li>
+							<!-- Tab item -->
+							<li class="nav-item" role="presentation">
+								<button class="nav-link mb-0" id="tour-pills-tab-3" data-bs-toggle="pill"
+									data-bs-target="#tour-pills-tab3" type="button" role="tab"
+									aria-controls="tour-pills-tab3" aria-selected="false">Legendary Stories</button>
+							</li>
+						</ul>
+						<!-- Outer tabs END -->
+					</div>
+				</div>
+				<!-- Tabs END -->
+			</div>
+		</section>
+		<!-- ============Tabs END=========== -->
+
+		<!-- ============Tabs-content START ===========-->
+		<section class="pt-4 pt-md-5">
+			<div class="container">
+
+				<div class="row g-4 g-md-5">
+					<!-- Tabs Content START -->
+					<div class="col-xl-12">
+						<!-- Outer tabs contents START -->
+						<div class="tab-content mb-0" id="tour-pills-tabContent">
+
+							<!-- Content item START -->
+							<div class="tab-pane fade show active" id="tour-pills-tab1" role="tabpanel"
+								aria-labelledby="tour-pills-tab-1">
+								<div class="card bg-transparent p-0">
+									<!-- Card header -->
+									<div class="card-header bg-transparent border-bottom p-0 pb-3">
+										<h5 class="mb-0">Accommodation Excellence: Where Comfort Meets Choice.</h5>
+									</div>
+
+									<!-- Card body START -->
+									<div class="card-body p-0 pt-3">
+										<!-- List -->
+										<ul class="list-group list-group-borderless mb-0">
+											<li class="list-group-item h6 fw-light d-flex mb-0">
+												<i class="fa-solid fa-check-circle text-success me-2"></i>Selecting your
+												accommodations is a critical art, integral to your overall experience.
+											</li>
+											<li class="list-group-item h6 fw-light d-flex mb-0">
+												<i class="fa-solid fa-check-circle text-success me-2"></i>We
+												meticulously ensure error-free stays by offering a diverse range of
+												choices, from basic to luxurious, all tailored to your preferences and
+												budget.
+											</li>
+											<li class="list-group-item h6 fw-light d-flex mb-0">
+												<i class="fa-solid fa-check-circle text-success me-2"></i>Our strong
+												partnerships grant us access to special rates and customized offers,
+												reflecting our commitment to your peace of mind.
+											</li>
+										</ul>
+									</div>
+									<!-- Card body END -->
+								</div>
+							</div>
+							<!-- Content item END -->
+
+							<!-- Content item START -->
+							<div class="tab-pane fade" id="tour-pills-tab2" role="tabpanel"
+								aria-labelledby="tour-pills-tab-2">
+								<div class="card bg-transparent p-0">
+									<!-- Card header -->
+									<div class="card-header bg-transparent border-bottom p-0 pb-3">
+										<h5 class="mb-0">Reliable Wheels, Experienced Hands.</h5>
+									</div>
+
+									<!-- Card body START -->
+									<div class="card-body p-0 pt-3">
+										<!-- List -->
+										<ul class="list-group list-group-borderless mb-0">
+											<li class="list-group-item h6 fw-light d-flex mb-0">
+												<i class="fa-solid fa-check-circle text-success me-2"></i>Our vehicles
+												and drivers are chosen with meticulous care, matching their profiles to
+												the specific needs of our guests.
+											</li>
+											<li class="list-group-item h6 fw-light d-flex mb-0">
+												<i class="fa-solid fa-check-circle text-success me-2"></i>We outsource
+												vehicles based on quality, long-standing relationships with experienced
+												drivers, and their familiarity with the travel circuit.
+											</li>
+											<li class="list-group-item h6 fw-light d-flex mb-0">
+												<i class="fa-solid fa-check-circle text-success me-2"></i>Our drivers
+												maintain constant communication with us throughout the entire journey,
+												ensuring the highest level of safety and service for our clients.
+											</li>
+										</ul>
+									</div>
+									<!-- Card body END -->
+								</div>
+							</div>
+							<!-- Content item END -->
+
+							<!-- Content item START -->
+							<div class="tab-pane fade" id="tour-pills-tab3" role="tabpanel"
+								aria-labelledby="tour-pills-tab-3">
+								<div class="card bg-transparent p-0">
+									<!-- Card header -->
+									<div class="card-header bg-transparent border-bottom p-0 pb-3">
+										<h5 class="mb-0">Turning Adventures into Legendary Stories with Our Guides.</h5>
+									</div>
+
+									<!-- Card body START -->
+									<div class="card-body p-0 pt-3">
+										<!-- List -->
+										<ul class="list-group list-group-borderless mb-0">
+											<li class="list-group-item h6 fw-light d-flex mb-0">
+												<i class="fa-solid fa-check-circle text-success me-2"></i>Our
+												government-approved and licensed guides are the heart of your
+												adventures.
+											</li>
+											<li class="list-group-item h6 fw-light d-flex mb-0">
+												<i class="fa-solid fa-check-circle text-success me-2"></i>They are
+												skilled storytellers, weaving captivating tales about life, politics,
+												history, and culture.
+											</li>
+											<li class="list-group-item h6 fw-light d-flex mb-0">
+												<i class="fa-solid fa-check-circle text-success me-2"></i>In rare
+												last-minute requests, a team member joins to ensure top-notch service.
+											</li>
+											<li class="list-group-item h6 fw-light d-flex mb-0">
+												<i class="fa-solid fa-check-circle text-success me-2"></i>Personally
+												overseeing every detail, we prioritize excellence, continuously seeking
+												immediate guest feedback for an extraordinary experience.
+											</li>
+										</ul>
+									</div>
+									<!-- Card body END -->
+								</div>
+							</div>
+							<!-- Content item END -->
+
+						</div>
+					</div>
+					<!-- Tabs Content END -->
+
+				</div> <!-- Row END -->
+			</div>
+		</section>
+		<!-- ============Tabs-content END=========== -->
+
+		<!-- ============Experience START=========== -->
+		<section class="pt-5 pt-md-8 pb-0">
+			<div class="container-fluid px-lg-5">
+				<!-- Title -->
+				<div class="row mb-4">
+					<div class="col-12 text-center">
+						<h2>Our Exciting Experience</h2>
+					</div>
+				</div>
+
+
+				<!-- Slider START -->
+				<div class="tiny-slider arrow-round arrow-blur rounded-3 overflow-hidden">
+					<div class="tiny-slider-inner" data-autoplay="true" data-arrow="true" data-dots="false"
+						data-items-xl="4" data-items-lg="3" data-items-md="2" data-items-xs="1">
+						<!-- Card item START -->
+						<div>
+							<div class="card card-metro overflow-hidden">
+								<img src="assets/images/category/hotel/resort/3by4/01.jpg" alt="">
+								<!-- Image overlay -->
+								<div class="card-img-overlay d-flex">
+									<!-- Info -->
+									<div class="card-text mt-auto">
+										<h4><a href="#" class="text-white stretched-link">Spa & Wellness</a></h4>
+										<p class="text-white mb-2">We focus a great deal on the understanding of
+											behavioral psychology and influence</p>
+										<button class="btn btn-link text-white p-0 mb-0">Explore now <i
+												class="fa-solid fa-arrow-right-long fa-fw"></i></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Card item END -->
+						<!-- Card item START -->
+						<div>
+							<div class="card card-metro overflow-hidden">
+								<img src="assets/images/category/hotel/resort/3by4/02.jpg" alt="">
+								<!-- Image overlay -->
+								<div class="card-img-overlay d-flex">
+									<!-- Info -->
+									<div class="card-text mt-auto">
+										<h4><a href="#" class="text-white stretched-link">Wedding & Romance</a></h4>
+										<p class="text-white mb-2">Understand that theory alone isn't going to get the
+											job done.</p>
+										<button class="btn btn-link text-white p-0 mb-0">Explore now <i
+												class="fa-solid fa-arrow-right-long fa-fw"></i></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Card item END -->
+						<!-- Card item START -->
+						<div>
+							<div class="card card-metro overflow-hidden">
+								<img src="assets/images/category/hotel/resort/3by4/03.jpg" alt="">
+								<!-- Image overlay -->
+								<div class="card-img-overlay d-flex">
+									<!-- Info -->
+									<div class="card-text mt-auto">
+										<h4><a href="#" class="text-white stretched-link">Activities</a></h4>
+										<p class="text-white mb-2">Tolerably behavior may admit daughters offending
+											effect wishes change way and any wanted.</p>
+										<button class="btn btn-link text-white p-0 mb-0">Explore now <i
+												class="fa-solid fa-arrow-right-long fa-fw"></i></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Card item END -->
+						<!-- Card item START -->
+						<div>
+							<div class="card card-metro overflow-hidden">
+								<img src="assets/images/category/hotel/resort/3by4/04.jpg" alt="">
+								<!-- Image overlay -->
+								<div class="card-img-overlay d-flex">
+									<!-- Info -->
+									<div class="card-text mt-auto">
+										<h4><a href="#" class="text-white stretched-link">Event Calendar</a></h4>
+										<p class="text-white mb-2">Praise effect wishes change way and any wanted
+											behavioral psychology and influence</p>
+										<button class="btn btn-link text-white p-0 mb-0">Explore now <i
+												class="fa-solid fa-arrow-right-long fa-fw"></i></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Card item END -->
+						<!-- Card item START -->
+						<div>
+							<div class="card card-metro overflow-hidden">
+								<img src="assets/images/category/hotel/resort/3by4/05.jpg" alt="">
+								<!-- Image overlay -->
+								<div class="card-img-overlay d-flex">
+									<!-- Info -->
+									<div class="card-text mt-auto">
+										<h4><a href="#" class="text-white stretched-link">Dining</a></h4>
+										<p class="text-white mb-2">Focus a great deal on the understanding of behavioral
+											psychology and influence</p>
+										<button class="btn btn-link text-white p-0 mb-0">Explore now <i
+												class="fa-solid fa-arrow-right-long fa-fw"></i></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Card item END -->
+						<!-- Card item START -->
+						<div>
+							<div class="card card-metro overflow-hidden">
+								<img src="assets/images/category/hotel/resort/3by4/06.jpg" alt="">
+								<!-- Image overlay -->
+								<div class="card-img-overlay d-flex">
+									<!-- Info -->
+									<div class="card-text mt-auto">
+										<h4><a href="#" class="text-white stretched-link">Fitness Center</a></h4>
+										<p class="text-white mb-2">Praise effect wishes change way and any wanted.</p>
+										<button class="btn btn-link text-white p-0 mb-0">Explore now <i
+												class="fa-solid fa-arrow-right-long fa-fw"></i></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Card item END -->
+						<!-- Card item START -->
+						<div>
+							<div class="card card-metro overflow-hidden">
+								<img src="assets/images/category/hotel/resort/3by4/07.jpg" alt="">
+								<!-- Image overlay -->
+								<div class="card-img-overlay d-flex">
+									<!-- Info -->
+									<div class="card-text mt-auto">
+										<h4><a href="#" class="text-white stretched-link">Shop</a></h4>
+										<p class="text-white mb-2">Do he it part more last in. We understand that theory
+											is important</p>
+										<button class="btn btn-link text-white p-0 mb-0">Explore now <i
+												class="fa-solid fa-arrow-right-long fa-fw"></i></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Card item END -->
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<!-- ============About START -->
+		<section class="pt-md-8">
+			<div class="container">
+				<div class="row g-4">
+					<div class="col-lg-10 m-auto text-center">
+						<h2>What We Offer!</h2>
+
+
+						<p class="lead mb-3"><strong>At "Tours & Safaris" INDIA</strong>, we are dedicated to providing
+							you with an
+							authentic and immersive Indian experience. Join us on this incredible journey to explore a
+							land of rich traditions, vibrant cultures, and breathtaking landscapes.</p>
+
+
+						<p class=" mb-3">Embark on a journey through the heart and soul of India through <strong>“Tour &
+								Safari”</strong> where ancient architecture, majestic forts, and the iconic Taj Mahal
+							come to life.
+							“Tours & Safaris” INDIA invites you to explore the endangered beauty of the royal Bengal
+							tiger, savor the rich tapestry of Indian cuisines, or unwind in the serene backwaters of
+							Kerala. Tailor your adventure by adding experiences like spiritual journeys in Varanasi,
+							thrilling safaris in national parks, Himalayan treks, or rejuvenating yoga retreats.</p>
+
+						<p class=" mb-3">Our
+							customizable itineraries allow you to <strong>savor regional delicacies, witness local
+								craftsmanship</strong>, and uncover the best of <strong>India's diverse
+								heritage</strong>. From the opulence of royal
+							Rajasthan to the serene beauty of <strong>the Andaman Islands</strong>, our signature
+							programs offer an array
+							of timeless experiences, featuring majestic forts, the spiritual treasures of North East
+							India, artistic heritage in South India, the allure of <strong>Kerala's backwaters</strong>,
+							and the legacy
+							of ancient edifices. These handcrafted journeys promise captivating stories and
+							unforgettable moments, making your escape a true masterpiece.</p>
+
+						<div class="container">
+							<div class="row g-2">
+								<!-- Image -->
+								<div class="col-md-4">
+									<div class="card card-grid-lg card-element-hover card-overlay-hover overflow-hidden"
+										style="background-image:url(assets/images/gallery/14.jpg); background-position: center left; background-size: cover;">
+
+										<img src="./assets/images/gallery/14.jpg" alt="">
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="card card-grid-lg card-element-hover card-overlay-hover overflow-hidden"
+										style="background-image:url(assets/images/gallery/14.jpg); background-position: center left; background-size: cover;">
+
+										<img src="./assets/images/gallery/14.jpg" alt="">
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="card card-grid-lg card-element-hover card-overlay-hover overflow-hidden"
+										style="background-image:url(assets/images/gallery/14.jpg); background-position: center left; background-size: cover;">
+										<img src="./assets/images/gallery/14.jpg" alt="">
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div> <!-- Row END -->
+			</div>
+		</section>
+		<!-- ============About END=========== -->
+
+
+
+		<!-- =======================Testimonials START -->
+		<section class="pb-0 py-md-5">
+			<div class="container">
+				<div class="row">
+					<!-- Slider START -->
+					<div class="col-lg-11 mx-auto">
+						<div class="tiny-slider arrow-round arrow-border arrow-hover">
+							<div class="tiny-slider-inner" data-edge="2" data-items="1">
+
+								<!-- Slide item START -->
+								<div class="px-4 px-md-5">
+									<div class="row justify-content-between align-items-center">
+
+										<div class="col-md-6 col-lg-5 position-relative">
+											<!-- Element -->
+											<div
+												class="position-absolute top-0 start-0 translate-middle z-index-9 mt-7 ms-4">
+												<img src="assets/images/element/02.svg"
+													class="h-60px bg-orange rounded p-2" alt="">
+											</div>
+
+											<!-- Svg decoration -->
+											<figure
+												class="position-absolute bottom-0 end-0 d-none d-sm-block mb-n5 me-n5">
+												<svg width="326px" height="335px" viewBox="0 0 326 335">
+													<path class="fill-primary opacity-1"
+														d="M7.3,0C3.3,0,0,3.3,0,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C14.6,3.3,11.3,0,7.3,0z
+												M59.2,0.7c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C66.5,4,63.2,0.7,59.2,0.7L59.2,0.7z	M111.1,1.5c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C118.4,4.7,115.1,1.5,111.1,1.5 C111.1,1.5,111.1,1.5,111.1,1.5L111.1,1.5z M163,2.2c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0 C170.3,5.5,167,2.2,163,2.2C163,2.2,163,2.2,163,2.2L163,2.2z M214.9,2.9c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3 c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C222.2,6.2,218.9,2.9,214.9,2.9C214.9,2.9,214.9,2.9,214.9,2.9L214.9,2.9z M266.8,3.7 c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C274.1,6.9,270.8,3.7,266.8,3.7C266.8,3.7,266.8,3.7,266.8,3.7L266.8,3.7z M318.7,4.4c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C326,7.7,322.7,4.4,318.7,4.4C318.7,4.4,318.7,4.4,318.7,4.4L318.7,4.4z M7.3,52.7c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C14.6,55.9,11.4,52.7,7.3,52.7C7.3,52.7,7.3,52.7,7.3,52.7L7.3,52.7z M59.2,53.4c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C66.5,56.7,63.3,53.4,59.2,53.4C59.2,53.4,59.2,53.4,59.2,53.4L59.2,53.4z M111.1,54.1c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C118.4,57.4,115.2,54.1,111.1,54.1C111.1,54.1,111.1,54.1,111.1,54.1L111.1,54.1z M163,54.9c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C170.3,58.1,167.1,54.9,163,54.9C163,54.9,163,54.9,163,54.9L163,54.9zM214.9,55.6c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C222.2,58.9,219,55.6,214.9,55.6C214.9,55.6,214.9,55.6,214.9,55.6L214.9,55.6z M266.8,56.3c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C274.1,59.6,270.9,56.3,266.8,56.3C266.8,56.3,266.8,56.3,266.8,56.3L266.8,56.3z M318.7,57c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C326,60.3,322.8,57.1,318.7,57C318.7,57,318.7,57,318.7,57L318.7,57zM7.3,105.3c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C14.7,108.6,11.4,105.3,7.3,105.3C7.3,105.3,7.3,105.3,7.3,105.3L7.3,105.3z M59.2,106c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C66.6,109.3,63.3,106.1,59.2,106C59.2,106,59.2,106,59.2,106L59.2,106z M111.1,106.8c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C118.5,110.1,115.2,106.8,111.1,106.8C111.1,106.8,111.1,106.8,111.1,106.8L111.1,106.8zM163,107.5c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C170.4,110.8,167.1,107.5,163,107.5C163,107.5,163,107.5,163,107.5L163,107.5z M214.9,108.2c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C222.3,111.5,219,108.3,214.9,108.2C214.9,108.2,214.9,108.3,214.9,108.2L214.9,108.2z M266.8,109c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C274.2,112.3,270.9,109,266.8,109C266.8,109,266.8,109,266.8,109L266.8,109zM318.7,109.7c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C326.1,113,322.8,109.7,318.7,109.7C318.7,109.7,318.7,109.7,318.7,109.7L318.7,109.7z M7.3,158c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C14.6,161.3,11.3,158,7.3,158z M59.2,158.7c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C66.5,162,63.2,158.7,59.2,158.7C59.2,158.7,59.2,158.7,59.2,158.7L59.2,158.7z M111.1,159.4c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C118.4,162.7,115.1,159.5,111.1,159.4C111.1,159.4,111.1,159.4,111.1,159.4L111.1,159.4z M163,160.2c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C170.3,163.5,167,160.2,163,160.2C163,160.2,163,160.2,163,160.2L163,160.2z M214.9,160.9c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C222.2,164.2,218.9,160.9,214.9,160.9C214.9,160.9,214.9,160.9,214.9,160.9L214.9,160.9zM266.8,161.6c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C274.1,164.9,270.8,161.6,266.8,161.6C266.8,161.6,266.8,161.6,266.8,161.6L266.8,161.6z M318.7,162.4c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C326,165.6,322.7,162.4,318.7,162.4C318.7,162.4,318.7,162.4,318.7,162.4L318.7,162.4z M7.3,210.6c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C14.6,213.9,11.4,210.7,7.3,210.6C7.3,210.6,7.3,210.6,7.3,210.6L7.3,210.6zM59.2,211.4c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C66.5,214.7,63.3,211.4,59.2,211.4C59.2,211.4,59.2,211.4,59.2,211.4L59.2,211.4z M111.1,212.1c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C118.4,215.4,115.2,212.1,111.1,212.1C111.1,212.1,111.1,212.1,111.1,212.1L111.1,212.1z M163,212.8c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C170.3,216.1,167.1,212.8,163,212.8C163,212.8,163,212.8,163,212.8L163,212.8z M214.9,213.6c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C222.2,216.8,219,213.6,214.9,213.6C214.9,213.6,214.9,213.6,214.9,213.6L214.9,213.6z M266.8,214.3c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C274.1,217.6,270.9,214.3,266.8,214.3C266.8,214.3,266.8,214.3,266.8,214.3L266.8,214.3z M318.7,215c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C326,218.3,322.8,215,318.7,215C318.7,215,318.7,215,318.7,215L318.7,215z M7.3,263.3c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C14.7,266.6,11.4,263.3,7.3,263.3C7.3,263.3,7.3,263.3,7.3,263.3L7.3,263.3z M59.2,264c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C66.6,267.3,63.3,264,59.2,264C59.2,264,59.2,264,59.2,264L59.2,264z M111.1,264.8c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C118.5,268,115.2,264.8,111.1,264.8C111.1,264.8,111.1,264.8,111.1,264.8L111.1,264.8z M163,265.5c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C170.4,268.8,167.1,265.5,163,265.5C163,265.5,163,265.5,163,265.5L163,265.5z M214.9,266.2c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C222.3,269.5,219,266.2,214.9,266.2C214.9,266.2,214.9,266.2,214.9,266.2L214.9,266.2z M266.8,267c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C274.2,270.2,270.9,267,266.8,267C266.8,267,266.8,267,266.8,267L266.8,267z M318.7,267.7c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C326.1,271,322.8,267.7,318.7,267.7C318.7,267.7,318.7,267.7,318.7,267.7L318.7,267.7z M7.4,316c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C14.7,319.2,11.4,316,7.4,316C7.3,316,7.3,316,7.4,316L7.4,316z M59.3,316.7c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C66.6,320,63.3,316.7,59.3,316.7C59.2,316.7,59.2,316.7,59.3,316.7L59.3,316.7z M111.2,317.4c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C118.5,320.7,115.2,317.4,111.2,317.4C111.1,317.4,111.1,317.4,111.2,317.4L111.2,317.4z M163.1,318.2c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C170.4,321.4,167.1,318.2,163.1,318.2C163,318.2,163,318.2,163.1,318.2L163.1,318.2z M215,318.9c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C222.3,322.2,219,318.9,215,318.9C214.9,318.9,214.9,318.9,215,318.9L215,318.9z M266.9,319.6c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C274.2,322.9,270.9,319.6,266.9,319.6C266.8,319.6,266.8,319.6,266.9,319.6L266.9,319.6z M318.8,320.4c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C326.1,323.6,322.8,320.4,318.8,320.4C318.7,320.4,318.7,320.4,318.8,320.4L318.8,320.4z" />
+												</svg>
+											</figure>
+
+											<!-- Image -->
+											<img src="assets/images/team/01.jpg" class="rounded-3 position-relative"
+												alt="">
+										</div>
+
+										<div class="col-md-6 col-lg-6">
+											<!-- Quote -->
+											<span class="display-3 mb-0 text-primary"><i class="bi bi-quote"></i></span>
+											<!-- Content -->
+											<h5 class="fw-light">Moonlight newspaper up its enjoyment agreeable
+												depending. Timed voice share led him to widen noisy young. At weddings
+												believed in laughing</h5>
+											<!-- Rating -->
+											<ul class="list-inline small mb-2">
+												<li class="list-inline-item me-0"><i
+														class="fa-solid fa-star text-warning"></i></li>
+												<li class="list-inline-item me-0"><i
+														class="fa-solid fa-star text-warning"></i></li>
+												<li class="list-inline-item me-0"><i
+														class="fa-solid fa-star text-warning"></i></li>
+												<li class="list-inline-item me-0"><i
+														class="fa-solid fa-star text-warning"></i></li>
+												<li class="list-inline-item"><i
+														class="fa-solid fa-star-half-alt text-warning"></i></li>
+											</ul>
+											<!-- Title -->
+											<h6 class="mb-0">Billy Vasquez</h6>
+											<span>Ceo of Apple</span>
+										</div>
+									</div>
+								</div>
+								<!-- Slide item END -->
+
+								<!-- Slide item START -->
+								<div class="px-4 px-md-5">
+									<div class="row justify-content-between align-items-center">
+
+										<div class="col-md-6 col-lg-5 position-relative">
+											<!-- Element -->
+											<div
+												class="position-absolute top-0 start-0 translate-middle mt-7 ms-4 z-index-9">
+												<img src="assets/images/element/03.svg"
+													class="h-60px bg-orange p-2 rounded" alt="">
+											</div>
+
+											<!-- Svg decoration -->
+											<figure
+												class="position-absolute bottom-0 end-0 mb-n5 me-n5 d-none d-sm-block">
+												<svg width="326px" height="335px" viewBox="0 0 326 335">
+													<path class="fill-primary opacity-1" d="M7.3,0C3.3,0,0,3.3,0,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C14.6,3.3,11.3,0,7.3,0z M59.2,0.7c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C66.5,4,63.2,0.7,59.2,0.7L59.2,0.7z M111.1,1.5c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C118.4,4.7,115.1,1.5,111.1,1.5 C111.1,1.5,111.1,1.5,111.1,1.5L111.1,1.5z M163,2.2c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0 C170.3,5.5,167,2.2,163,2.2C163,2.2,163,2.2,163,2.2L163,2.2z M214.9,2.9c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3 c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C222.2,6.2,218.9,2.9,214.9,2.9C214.9,2.9,214.9,2.9,214.9,2.9L214.9,2.9z M266.8,3.7 c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C274.1,6.9,270.8,3.7,266.8,3.7 C266.8,3.7,266.8,3.7,266.8,3.7L266.8,3.7z M318.7,4.4c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0 C326,7.7,322.7,4.4,318.7,4.4C318.7,4.4,318.7,4.4,318.7,4.4L318.7,4.4z M7.3,52.7c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3 c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C14.6,55.9,11.4,52.7,7.3,52.7C7.3,52.7,7.3,52.7,7.3,52.7L7.3,52.7z M59.2,53.4 c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C66.5,56.7,63.3,53.4,59.2,53.4 C59.2,53.4,59.2,53.4,59.2,53.4L59.2,53.4z M111.1,54.1c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0 C118.4,57.4,115.2,54.1,111.1,54.1C111.1,54.1,111.1,54.1,111.1,54.1L111.1,54.1z M163,54.9c-4,0-7.3,3.3-7.3,7.3 c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C170.3,58.1,167.1,54.9,163,54.9C163,54.9,163,54.9,163,54.9L163,54.9z M214.9,55.6c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C222.2,58.9,219,55.6,214.9,55.6 C214.9,55.6,214.9,55.6,214.9,55.6L214.9,55.6z M266.8,56.3c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3 c0,0,0,0,0,0C274.1,59.6,270.9,56.3,266.8,56.3C266.8,56.3,266.8,56.3,266.8,56.3L266.8,56.3z M318.7,57c-4,0-7.3,3.3-7.3,7.3 c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C326,60.3,322.8,57.1,318.7,57C318.7,57,318.7,57,318.7,57L318.7,57z M7.3,105.3c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C14.7,108.6,11.4,105.3,7.3,105.3 C7.3,105.3,7.3,105.3,7.3,105.3L7.3,105.3z M59.2,106c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0 C66.6,109.3,63.3,106.1,59.2,106C59.2,106,59.2,106,59.2,106L59.2,106z M111.1,106.8c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3 c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C118.5,110.1,115.2,106.8,111.1,106.8C111.1,106.8,111.1,106.8,111.1,106.8L111.1,106.8z M163,107.5c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C170.4,110.8,167.1,107.5,163,107.5 C163,107.5,163,107.5,163,107.5L163,107.5z M214.9,108.2c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0 C222.3,111.5,219,108.3,214.9,108.2C214.9,108.2,214.9,108.3,214.9,108.2L214.9,108.2z M266.8,109c-4,0-7.3,3.3-7.3,7.3 c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C274.2,112.3,270.9,109,266.8,109C266.8,109,266.8,109,266.8,109L266.8,109z M318.7,109.7c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C326.1,113,322.8,109.7,318.7,109.7 C318.7,109.7,318.7,109.7,318.7,109.7L318.7,109.7z M7.3,158c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3 c0,0,0,0,0,0C14.6,161.3,11.3,158,7.3,158z M59.2,158.7c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0 C66.5,162,63.2,158.7,59.2,158.7C59.2,158.7,59.2,158.7,59.2,158.7L59.2,158.7z M111.1,159.4c-4,0-7.3,3.3-7.3,7.3 c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C118.4,162.7,115.1,159.5,111.1,159.4C111.1,159.4,111.1,159.4,111.1,159.4 L111.1,159.4z M163,160.2c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0 C170.3,163.5,167,160.2,163,160.2C163,160.2,163,160.2,163,160.2L163,160.2z M214.9,160.9c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3 c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C222.2,164.2,218.9,160.9,214.9,160.9C214.9,160.9,214.9,160.9,214.9,160.9L214.9,160.9z M266.8,161.6c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C274.1,164.9,270.8,161.6,266.8,161.6 C266.8,161.6,266.8,161.6,266.8,161.6L266.8,161.6z M318.7,162.4c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3 c0,0,0,0,0,0C326,165.6,322.7,162.4,318.7,162.4C318.7,162.4,318.7,162.4,318.7,162.4L318.7,162.4z M7.3,210.6c-4,0-7.3,3.3-7.3,7.3 c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C14.6,213.9,11.4,210.7,7.3,210.6C7.3,210.6,7.3,210.6,7.3,210.6L7.3,210.6z M59.2,211.4c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C66.5,214.7,63.3,211.4,59.2,211.4 C59.2,211.4,59.2,211.4,59.2,211.4L59.2,211.4z M111.1,212.1c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3 c0,0,0,0,0,0C118.4,215.4,115.2,212.1,111.1,212.1C111.1,212.1,111.1,212.1,111.1,212.1L111.1,212.1z M163,212.8 c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C170.3,216.1,167.1,212.8,163,212.8 C163,212.8,163,212.8,163,212.8L163,212.8z M214.9,213.6c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0 C222.2,216.8,219,213.6,214.9,213.6C214.9,213.6,214.9,213.6,214.9,213.6L214.9,213.6z M266.8,214.3c-4,0-7.3,3.3-7.3,7.3 c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C274.1,217.6,270.9,214.3,266.8,214.3C266.8,214.3,266.8,214.3,266.8,214.3 L266.8,214.3z M318.7,215c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C326,218.3,322.8,215,318.7,215 C318.7,215,318.7,215,318.7,215L318.7,215z M7.3,263.3c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0 C14.7,266.6,11.4,263.3,7.3,263.3C7.3,263.3,7.3,263.3,7.3,263.3L7.3,263.3z M59.2,264c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3 c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C66.6,267.3,63.3,264,59.2,264C59.2,264,59.2,264,59.2,264L59.2,264z M111.1,264.8 c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C118.5,268,115.2,264.8,111.1,264.8 C111.1,264.8,111.1,264.8,111.1,264.8L111.1,264.8z M163,265.5c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3 c0,0,0,0,0,0C170.4,268.8,167.1,265.5,163,265.5C163,265.5,163,265.5,163,265.5L163,265.5z M214.9,266.2c-4,0-7.3,3.3-7.3,7.3 c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C222.3,269.5,219,266.2,214.9,266.2C214.9,266.2,214.9,266.2,214.9,266.2 L214.9,266.2z M266.8,267c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0 C274.2,270.2,270.9,267,266.8,267C266.8,267,266.8,267,266.8,267L266.8,267z M318.7,267.7c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3 c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C326.1,271,322.8,267.7,318.7,267.7C318.7,267.7,318.7,267.7,318.7,267.7L318.7,267.7z M7.4,316 c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C14.7,319.2,11.4,316,7.4,316C7.3,316,7.3,316,7.4,316 L7.4,316z M59.3,316.7c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C66.6,320,63.3,316.7,59.3,316.7 C59.2,316.7,59.2,316.7,59.3,316.7L59.3,316.7z M111.2,317.4c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3 c0,0,0,0,0,0C118.5,320.7,115.2,317.4,111.2,317.4C111.1,317.4,111.1,317.4,111.2,317.4L111.2,317.4z M163.1,318.2 c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C170.4,321.4,167.1,318.2,163.1,318.2 C163,318.2,163,318.2,163.1,318.2L163.1,318.2z M215,318.9c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3 c0,0,0,0,0,0C222.3,322.2,219,318.9,215,318.9C214.9,318.9,214.9,318.9,215,318.9L215,318.9z M266.9,319.6c-4,0-7.3,3.3-7.3,7.3 c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C274.2,322.9,270.9,319.6,266.9,319.6C266.8,319.6,266.8,319.6,266.9,319.6 L266.9,319.6z M318.8,320.4c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0
+												C326.1,323.6,322.8,320.4,318.8,320.4C318.7,320.4,318.7,320.4,318.8,320.4L318.8,320.4z" />
+												</svg>
+											</figure>
+
+											<!-- Image -->
+											<img src="assets/images/team/02.jpg" class="rounded-3 position-relative"
+												alt="">
+										</div>
+
+										<div class="col-md-6 col-lg-6">
+											<!-- Quote -->
+											<span class="display-3 mb-0 text-primary"><i class="bi bi-quote"></i></span>
+											<!-- Content -->
+											<h5 class="fw-light">Passage its ten led hearted removal cordial. Preference
+												any astonished unreserved Mrs. understood the Preference unreserved.
+											</h5>
+											<!-- Rating -->
+											<ul class="list-inline small mb-2">
+												<li class="list-inline-item me-0"><i
+														class="fa-solid fa-star text-warning"></i></li>
+												<li class="list-inline-item me-0"><i
+														class="fa-solid fa-star text-warning"></i></li>
+												<li class="list-inline-item me-0"><i
+														class="fa-solid fa-star text-warning"></i></li>
+												<li class="list-inline-item me-0"><i
+														class="fa-solid fa-star text-warning"></i></li>
+												<li class="list-inline-item"><i
+														class="fa-solid fa-star text-warning"></i></li>
+											</ul>
+											<!-- Title -->
+											<h6 class="mb-0">Carolyn Ortiz</h6>
+											<span>Ceo of Google</span>
+										</div>
+									</div>
+								</div>
+								<!-- Slide item END -->
+
+							</div>
+						</div>
+					</div>
+					<!-- Slider END -->
+				</div>
+			</div>
+		</section>
+		<!-- =======================Testimonials END -->
+
+
+		<!-- =======================Download app START -->
+		<section class="bg-light">
+			<div class="container">
+				<div class="row g-4">
+
+					<!-- Help -->
+					<div class="col-md-6 col-xxl-4">
+						<div class="bg-body d-flex rounded-3 h-100 p-4">
+							<h3><i class="fa-solid fa-hand-holding-heart"></i></h3>
+							<div class="ms-3">
+								<h5>24x7 Help</h5>
+								<p class="mb-0">If we fall short of your expectation in any way, let us know</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Trust -->
+					<div class="col-md-6 col-xxl-4">
+						<div class="bg-body d-flex rounded-3 h-100 p-4">
+							<h3><i class="fa-solid fa-hand-holding-usd"></i></h3>
+							<div class="ms-3">
+								<h5>Payment Trust</h5>
+								<p class="mb-0">All refunds come with no questions asked guarantee</p>
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+		</section>
+		<!-- =======================Download app END -->
+
+		<!-- ===========Client START ============-->
+		<section class="bg-dark  border-top border-top py-0 py-md-5">
+			<div class="container">
+				<div class="row g-4 g-lg-7 justify-content-center align-items-center">
+					<!-- Image -->
+					<div class="col-5 col-sm-3 col-xl-2">
+						<img src="assets/images/client/01.svg" class="grayscale" alt="">
+					</div>
+					<!-- Image -->
+					<div class="col-5 col-sm-3 col-xl-2">
+						<img src="assets/images/client/02.svg" class="grayscale" alt="">
+					</div>
+					<!-- Image -->
+					<div class="col-5 col-sm-3 col-xl-2">
+						<img src="assets/images/client/03.svg" class="grayscale" alt="">
+					</div>
+					<!-- Image -->
+					<div class="col-5 col-sm-3 col-xl-2">
+						<img src="assets/images/client/04.svg" class="grayscale" alt="">
+					</div>
+					<!-- Image -->
+					<div class="col-5 col-sm-3 col-xl-2">
+						<img src="assets/images/client/05.svg" class="grayscale" alt="">
+					</div>
+					<!-- Image -->
+					<div class="col-5 col-sm-3 col-xl-2">
+						<img src="assets/images/client/06.svg" class="grayscale" alt="">
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- =======================Client END -->
+	</main>
+	<!-- **************** MAIN CONTENT END **************** -->
+
+	<!-- =======================Footer START -->
+	<footer class="bg-dark pt-5">
+		<div class="container">
+			<!-- Row START -->
+			<div class="row g-4"> 
+
+				<!-- Widget 1 START -->
+				<div class="col-lg-3">
+					<!-- logo -->
+					<a href="index.html">
+						<img class="h-40px my-3" src="assets/images/logo-light.svg" alt="logo">
+					</a>
+					<p class="mb-2"><a href="#" class="text-body-secondary text-primary-hover"><i
+								class="bi bi-telephone me-2"></i>+919891428981</a> </p>
+					<p class="mb-0"><a href="#" class="text-body-secondary text-primary-hover"><i
+								class="bi bi-envelope me-2"></i>info@tourandsafaris.com</a></p>
+				</div>
+				<!-- Widget 1 END -->
+
+				<!-- Widget 2 START -->
+				<div class="col-lg-8 ms-auto">
+					<div class="row g-4">
+						<!-- Link block -->
+						<div class="col-6 col-md-3">
+							<h5 class="text-white mb-2 mb-md-4">Page</h5>
+							<ul class="nav flex-column text-primary-hover">
+								<li class="nav-item"><a class="nav-link text-body-secondary" href="#">About us</a></li>
+								<li class="nav-item"><a class="nav-link text-body-secondary" href="#">Contact us</a>
+								</li>
+							</ul>
+						</div>
+
+						<!-- Link block -->
+						<div class="col-6 col-md-3">
+							<h5 class="text-white mb-2 mb-md-4">Link</h5>
+							<ul class="nav flex-column text-primary-hover">
+								<li class="nav-item"><a class="nav-link text-body-secondary" href="#">Privacy Policy</a>
+								</li>
+								<li class="nav-item"><a class="nav-link text-body-secondary" href="#">Terms</a></li>
+								<li class="nav-item"><a class="nav-link text-body-secondary" href="#">Support</a></li>
+							</ul>
+						</div>
+
+						<!-- Link block -->
+						<div class="col-6 col-md-3">
+							<h5 class="text-white mb-2 mb-md-4">Global Site</h5>
+							<ul class="nav flex-column text-primary-hover">
+								<li class="nav-item"><a class="nav-link text-body-secondary" href="#">India</a></li>
+								<li class="nav-item"><a class="nav-link text-body-secondary" href="#">California</a>
+								</li>
+								<li class="nav-item"><a class="nav-link text-body-secondary" href="#">Indonesia</a></li>
+								<li class="nav-item"><a class="nav-link text-body-secondary" href="#">Canada</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- Widget 2 END -->
+
+			</div><!-- Row END -->
+
+
+			<!-- Divider -->
+			<hr class="mt-4 mb-0">
+
+			<!-- Bottom footer -->
+			<div class="row">
+				<div class="container">
+					<div class="d-lg-flex justify-content-between align-items-center py-3 text-center text-lg-start">
+						<!-- copyright text -->
+						<div class="text-body-secondary text-primary-hover"> Copyrights ©2024 Tour Safari.</div>
+						<!-- copyright links-->
+						<div class="nav mt-2 mt-lg-0">
+							<ul class="list-inline text-primary-hover mx-auto mb-0">
+								<li class="list-inline-item me-0"><a class="nav-link text-body-secondary py-1"
+										href="#">Terms and conditions</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- =======================Footer END -->
+
+	<!-- Back to top -->
+	<div class="back-top"></div>
+
+
+	<!-- Modal -->
+	<div class="detailsAlert modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h1 class="modal-title fs-5" id="exampleModalLabel">...</h1>
+					<button type="button" class="btn-close modal-close" data-bs-dismiss="modal"
+						aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					...
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary modal-close" data-bs-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Bootstrap JS -->
+	<script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+	<!-- Vendors -->
+	<script src="assets/vendor/tiny-slider/tiny-slider.js"></script>
+	<script src="assets/vendor/glightbox/js/glightbox.js"></script>
+	<script src="assets/vendor/flatpickr/js/flatpickr.min.js"></script>
+	<script src="assets/vendor/choices/js/choices.min.js"></script>
+
+	<!-- ThemeFunctions -->
+	<script src="assets/js/functions.js"></script>
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+		integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+	<script>
+
+		function elisc_tm_movingbox() {
+			"use strict";
+			var list = jQuery('.about-subInfo');
+			if (window.matchMedia("(max-width: 767px)").matches) {
+				var detailsAlert = jQuery(".detailsAlert")
+				list.on('click', function () {
+					var element = jQuery(this);
+					var text = element.find('.subInfoDetails').text();
+					var heading = element.find('.subInfoDetails b').text();
+					detailsAlert.find('#exampleModalLabel').text(heading);
+					detailsAlert.find('.modal-body').text(text);
+					detailsAlert[0].addClass("show");
+					detailsAlert.css("display", "block");
+				});
+				jQuery(".modal-close").on("click", function () {
+					console.log("dismiss");
+					detailsAlert[0].removeClass("show");
+					detailsAlert.css("display", "none");
+				})
+			} else {
+				if (!$('.movingbox').length) {
+					$('body').append('<div class="movingbox subInfoDetails"></div>');
+				}
+				var movingbox = jQuery('.movingbox');
+				var movingboxH = jQuery('.movingbox').height() / 2;
+				list.on('mouseenter', function () {
+					var element = jQuery(this);
+					movingbox.removeAttr('class');
+					movingbox.addClass(`movingbox subInfoDetails opened bg-${$(this).attr('id')}-subtle`);
+					movingbox.html(element.find('.subInfoDetails').text());
+				}).on('mouseleave', function () {
+					movingbox.removeClass('opened');
+				}).on('mousemove', function (event) {
+					var ymove = event.clientY - movingboxH;
+					var xmove = event.clientX + 20;
+					movingbox.css({ top: ymove + 'px', left: xmove + 'px' });
+				});
+			}
+
+
+		}
+		elisc_tm_movingbox();
+
+	</script>
+</body>
+
+</html>
